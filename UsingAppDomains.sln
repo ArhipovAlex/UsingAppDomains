@@ -5,6 +5,10 @@ VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsingAppDomains", "UsingAppDomains\UsingAppDomains.csproj", "{6AD7E341-0539-4CD4-A054-D509E114655C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextWindow", "TextWindow\TextWindow.csproj", "{CAE61C06-E657-4592-AC2B-5057EA9D3063}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextDrawer", "TextDrawer\TextDrawer.csproj", "{B0A9459F-C69F-41DC-AA4D-E26C38E344C9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{6AD7E341-0539-4CD4-A054-D509E114655C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6AD7E341-0539-4CD4-A054-D509E114655C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6AD7E341-0539-4CD4-A054-D509E114655C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAE61C06-E657-4592-AC2B-5057EA9D3063}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAE61C06-E657-4592-AC2B-5057EA9D3063}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAE61C06-E657-4592-AC2B-5057EA9D3063}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAE61C06-E657-4592-AC2B-5057EA9D3063}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0A9459F-C69F-41DC-AA4D-E26C38E344C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0A9459F-C69F-41DC-AA4D-E26C38E344C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0A9459F-C69F-41DC-AA4D-E26C38E344C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0A9459F-C69F-41DC-AA4D-E26C38E344C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
