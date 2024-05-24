@@ -48,8 +48,9 @@
 			// fontToolStripMenuItem
 			// 
 			this.fontToolStripMenuItem.Name = "fontToolStripMenuItem";
-			this.fontToolStripMenuItem.Size = new System.Drawing.Size(52, 26);
+			this.fontToolStripMenuItem.Size = new System.Drawing.Size(52, 24);
 			this.fontToolStripMenuItem.Text = "Font";
+			this.fontToolStripMenuItem.Click += new System.EventHandler(this.fontToolStripMenuItem_Click_1);
 			// 
 			// panel
 			// 
@@ -59,7 +60,7 @@
 			this.panel.Size = new System.Drawing.Size(402, 230);
 			this.panel.TabIndex = 1;
 			// 
-			// Form1
+			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -68,7 +69,7 @@
 			this.Controls.Add(this.menuStrip1);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
 			this.MainMenuStrip = this.menuStrip1;
-			this.Name = "Form1";
+			this.Name = "MainForm";
 			this.Text = "TextDrawer";
 			this.menuStrip1.ResumeLayout(false);
 			this.menuStrip1.PerformLayout();

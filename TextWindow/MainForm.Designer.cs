@@ -1,6 +1,6 @@
 ﻿namespace TextWindow
 {
-	partial class Form1
+	partial class MainForm
 	{
 		/// <summary>
 		/// Required designer variable.
@@ -28,33 +28,35 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.textBox1 = new System.Windows.Forms.TextBox();
+			this.textBox = new System.Windows.Forms.TextBox();
 			this.SuspendLayout();
 			// 
-			// textBox1
+			// textBox
 			// 
-			this.textBox1.Location = new System.Drawing.Point(13, 13);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(353, 22);
-			this.textBox1.TabIndex = 0;
+			this.textBox.Location = new System.Drawing.Point(13, 13);
+			this.textBox.Name = "textBox";
+			this.textBox.Size = new System.Drawing.Size(353, 22);
+			this.textBox.TabIndex = 0;
+			this.textBox.TextChanged += textBox_TextChanged;
 			// 
-			// Form1
+			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(378, 64);
-			this.Controls.Add(this.textBox1);
+			this.Controls.Add(this.textBox);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-			this.Name = "Form1";
+			this.Name = "MainForm";
 			this.Text = "TextWindow";
 			this.ResumeLayout(false);
 			this.PerformLayout();
+			this.LocationChanged += MainForm_LocationChanged;
 
 		}
 
 		#endregion
 
-		private System.Windows.Forms.TextBox textBox1;
+		private System.Windows.Forms.TextBox textBox;
 	}
 }
 

@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -14,6 +15,8 @@ namespace TextDrawer
 	{
 		string text = "Hello";
 		Font font;
+		public Point Location { get; set; }
+		public int Width { get; set; }
 		public MainForm()
 		{
 			InitializeComponent();
@@ -35,6 +38,27 @@ namespace TextDrawer
 		private void MainForm_Paint(object sender, PaintEventArgs e)
 		{
 			panel_Paint(panel, new PaintEventArgs(panel.CreateGraphics(),panel.ClientRectangle));
+		}
+
+		private void fontToolStripMenuItem_Click_1(object sender, EventArgs e)
+		{
+			FontDialog dialog = new FontDialog();
+			dialog.Font = this.font;
+			if(dialog.ShowDialog() == DialogResult.OK)
+			{
+				this.font= dialog.Font;
+				panel_Paint(panel, new PaintEventArgs(panel.CreateGraphics(), panel.ClientRectangle));
+			}
+		}
+		public void SetText(string text)
+		{
+			this.text = text;
+			panel_Paint(panel, new PaintEventArgs(panel.CreateGraphics(), panel.ClientRectangle));
+		}
+		public void Move(Point location, int width)
+		{
+			Location = location;
+			Width = width;
 		}
 	}
 }
